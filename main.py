@@ -22,5 +22,5 @@ def generate():
         return output
 
 
-app.run(host='https://articlegenerator.azurewebsites.net/', port=80)
+app.run(host='0.0.0.0', port=80)
 
