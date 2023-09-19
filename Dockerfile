@@ -1,6 +1,5 @@
 # Use a base image with Python for Windows
-FROM python:3.11
-
+FROM python:alpine
 # Set environment variables for Flask
 ENV FLASK_APP=main.py
 ENV FLASK_RUN_HOST=0.0.0.0
