@@ -21,5 +21,5 @@ def generate():
         output = chain.run(prompt)
         return output
 
-app.run(port=8000)
+app.run('https://article-generator.azurewebsites.net/')
 
