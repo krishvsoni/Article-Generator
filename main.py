@@ -15,7 +15,7 @@ def index():
 def generate():
     if request.method == 'POST':
         prompt = PromptTemplate.from_template("Generate an article on title {title}? of two huge paragraph")
-        llm = OpenAI(openai_api_key='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')
+        llm = OpenAI(openai_api_key='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')
         chain = LLMChain(llm=llm, prompt=prompt)
         prompt = request.json.get('prompt')
         output = chain.run(prompt)
